@@ -28,8 +28,8 @@ def post_new(request):
 			post.save()
 
 			return redirect('post_detail', pk=post.pk)
-		else:
-			form = PostForm()
+	else:
+		form = PostForm()
 
 	return render(request, 'myblog/post_edit.html', {'form': form})
 
