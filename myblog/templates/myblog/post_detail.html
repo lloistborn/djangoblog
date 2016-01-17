@@ -7,6 +7,9 @@
                 {{ post.published_date }}
             </div>
         {% endif %}
+        <a href="{% url 'post_edit' post_id=post.pk %}" class="btn-floating yellow darken-1">
+      		<i class="large material-icons">mode_edit</i>
+    	</a>
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaks }}</p>
     </div>

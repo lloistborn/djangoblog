@@ -7,10 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/materialize.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
 	
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">	
 </head>
 <body>
 	<div class="page-header">
+		<a href="{% url 'post_new' %}" class="top-menu"><i class="small material-icons">library_add</i></a>
 		<h1><a href=""> Django Lloist Blog </a></h1>
 	</div>
 	<div class="content container">
